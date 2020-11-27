@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getData, getBeers } from "../modules/rest";
+import Loader from "./Loader";
 import Queue from "./Queue";
 import Clock from "./Clock";
 import Serving from "./Serving";
@@ -30,6 +31,7 @@ function Main() {
       <Crew />
       <Taps />
       {data.queue && <Queue data={data} />}
+      {!data.queue && <Loader />}
     </div>
   );
 }
