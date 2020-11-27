@@ -1,6 +1,13 @@
 import React from "react";
-function QueueList() {
-  return <div className="QueueList"></div>;
+import Order from "./Order";
+function QueueList(props) {
+  return (
+    <div className="QueueList">
+      {props.orders.map((item, i) => {
+        return <Order key={i} lineNumber={i} order={item} />;
+      })}
+    </div>
+  );
 }
 
 export default QueueList;

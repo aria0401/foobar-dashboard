@@ -80,3 +80,22 @@ $body-secondary-color: white;
   }
   font: 100% $font-stack;
 }
+
+.Order {
+  display: flex;
+  padding: 10px;
+  color: white;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.highlight {
+  color: $highlight-color;
+}
+.beerimg {
+  width: auto;
+  height: 40px;
+}
+.order-details {
+  align-self: top;
+}

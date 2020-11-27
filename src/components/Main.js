@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from "react";
-import { getData, getBeers } from "../modules/Rest";
+import React, { useState, useEffect } from "react";
+import { getData, getBeers } from "../modules/rest";
 import Queue from "./Queue";
 import Clock from "./Clock";
 import Serving from "./Serving";
@@ -14,13 +14,13 @@ function Main() {
   console.log(beers);
   useEffect(() => {
     getData(setData);
-   getBeers(setBeers);
+    getBeers(setBeers);
 
-   setInterval(() => {
-     getData(setData);
-   }, 10000);
+    setInterval(() => {
       getData(setData);
-  }, []); 
+    }, 10000);
+    getData(setData);
+  }, []);
 
   return (
     <div className="Main">
@@ -29,7 +29,7 @@ function Main() {
       <ReadyList />
       <Crew />
       <Taps />
-      {data.queue && <Queue data={data}/>}
+      {data.queue && <Queue data={data} />}
     </div>
   );
 }
