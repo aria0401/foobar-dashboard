@@ -13,7 +13,7 @@ function Order(props) {
         })}
       </div>
 
-      <p>{props.order.id}</p>
+      <p> # {props.order.id}</p>
     </div>
   );
 }

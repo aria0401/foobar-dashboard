@@ -31,7 +31,7 @@ function Main() {
       <Crew />
       <Taps />
       {data.queue && <Queue data={data} />}
-      {!data.queue && <Loader />}
+      {!data && <Loader />}
     </div>
   );
 }

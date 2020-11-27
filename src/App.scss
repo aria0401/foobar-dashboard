@@ -72,7 +72,6 @@ $body-secondary-color: white;
 
 .Queue {
   @include gridItem(4, -1, 1, -1, $third-color);
-  overflow-y: scroll;
 }
 
 .panel {
