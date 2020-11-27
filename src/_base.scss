@@ -1,0 +1,8 @@
+@mixin gridItem($column, $row, $color) {
+  grid-column: $column;
+  grid-row: $row;
+  height: 100%;
+  width: 100%;
+  background-color: $color;
+  border-radius: 20px;
+}
