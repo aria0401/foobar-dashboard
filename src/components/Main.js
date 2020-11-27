@@ -26,7 +26,7 @@ function Main() {
   return (
     <div className="Main">
       <Clock />
-      <Serving />
+      {data.serving && <Serving data={data} />}
       <ReadyList />
       <Crew />
       <Taps />

@@ -72,6 +72,7 @@ $body-secondary-color: white;
 
 .Queue {
   @include gridItem(4, -1, 1, -1, $third-color);
+  overflow-y: scroll;
 }
 
 .panel {
@@ -98,4 +99,12 @@ $body-secondary-color: white;
 }
 .order-details {
   align-self: top;
+}
+
+.serving {
+  margin-left: 10px;
+  display: flex;
+  justify-content: baseline;
+  color: black;
+  flex-wrap: nowrap;
 }
