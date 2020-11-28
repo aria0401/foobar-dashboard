@@ -107,3 +107,33 @@ $body-secondary-color: white;
   color: black;
   flex-wrap: nowrap;
 }
+
+#highlight-title {
+  color: $highlight-color;
+}
+
+.beersimg {
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+.panel {
+  .readyNr {
+    color: $secondary-highlight-color;
+  }
+}
+.ReadyList {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.ReadyList {
+  div {
+    * {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}
