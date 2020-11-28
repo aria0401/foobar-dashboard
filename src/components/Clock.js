@@ -3,7 +3,7 @@ import  React, { useState , useEffect } from 'react'
 function Clock(props) {
   const [date,setDate] = useState(new Date());
 
-  console.log(props.data.closingTime)
+  
  
   useEffect(() => {
     var timer = setInterval(()=>setDate(new Date()), 1000 )

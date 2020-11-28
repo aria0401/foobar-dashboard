@@ -8,6 +8,7 @@ import Crew from "./Crew";
 import Taps from "./Taps";
 
 function Main() {
+  
   const [data, setData] = useState({});
   const [beers, setBeers] = useState({});
   console.log(data);
@@ -22,16 +23,17 @@ function Main() {
     getData(setData);
   }, []);
 
+  
   return (
     <div className="Main">
      
       {data.bar && <Clock data={data} />}
       {data.serving && <Serving data={data} />}
       <ReadyList />
-      <Crew />
+      {data.bartenders && <Crew data={data}/>}
       <Taps />
       {data.queue && <Queue data={data} />}
-    
+     
     </div>
   );
 }

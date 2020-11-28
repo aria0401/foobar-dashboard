@@ -8,8 +8,8 @@ function Order(props) {
       <p className="highlight line-number">{props.lineNumber + 1}</p>
       <img className="beerimg" src={beerimg} alt="beerImage"/>
       <div>
-        {props.order.order.map((item) => {
-          return <p className="order-details">{item}</p>;
+        {props.order.order.map((item, orderkey) => {
+          return <p key={orderkey} className="order-details">{item}</p>;
         })}
       </div>
 
