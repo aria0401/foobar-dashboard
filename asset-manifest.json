@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nitzanmoise/foobar-dashboard.git/static/css/main.6a0baa44.chunk.css",
+    "main.js": "/nitzanmoise/foobar-dashboard.git/static/js/main.661ce854.chunk.js",
+    "main.js.map": "/nitzanmoise/foobar-dashboard.git/static/js/main.661ce854.chunk.js.map",
+    "runtime-main.js": "/nitzanmoise/foobar-dashboard.git/static/js/runtime-main.f10de427.js",
+    "runtime-main.js.map": "/nitzanmoise/foobar-dashboard.git/static/js/runtime-main.f10de427.js.map",
+    "static/js/2.93a51230.chunk.js": "/nitzanmoise/foobar-dashboard.git/static/js/2.93a51230.chunk.js",
+    "static/js/2.93a51230.chunk.js.map": "/nitzanmoise/foobar-dashboard.git/static/js/2.93a51230.chunk.js.map",
+    "static/js/3.dcc3a098.chunk.js": "/nitzanmoise/foobar-dashboard.git/static/js/3.dcc3a098.chunk.js",
+    "static/js/3.dcc3a098.chunk.js.map": "/nitzanmoise/foobar-dashboard.git/static/js/3.dcc3a098.chunk.js.map",
+    "index.html": "/nitzanmoise/foobar-dashboard.git/index.html",
+    "static/css/main.6a0baa44.chunk.css.map": "/nitzanmoise/foobar-dashboard.git/static/css/main.6a0baa44.chunk.css.map",
+    "static/js/2.93a51230.chunk.js.LICENSE.txt": "/nitzanmoise/foobar-dashboard.git/static/js/2.93a51230.chunk.js.LICENSE.txt",
+    "static/media/beer.6b6f4b38.png": "/nitzanmoise/foobar-dashboard.git/static/media/beer.6b6f4b38.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f10de427.js",
+    "static/js/2.93a51230.chunk.js",
+    "static/css/main.6a0baa44.chunk.css",
+    "static/js/main.661ce854.chunk.js"
+  ]
+}
