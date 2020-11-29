@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { getData, getBeers } from "../modules/rest";
+import React from "react";
 import Queue from "./Queue";
 import Clock from "./Clock";
 import Serving from "./Serving";
@@ -7,32 +6,20 @@ import ReadyList from "./ReadyList";
 import Crew from "./Crew";
 import Taps from "./Taps";
 
-function Main() {
+function Main(props) {
   
-  const [data, setData] = useState({});
-  const [beers, setBeers] = useState({});
-  console.log(data);
-  console.log(beers);
-  useEffect(() => {
-    getData(setData);
-    getBeers(setBeers);
-
-    setInterval(() => {
-      getData(setData);
-    }, 10000);
-    getData(setData);
-  }, []);
+  const data = props.data;
 
   
   return (
     <div className="Main">
      
-      {data.bar && <Clock data={data} />}
-      {data.serving && <Serving data={data} />}
+      <Clock data={props.data} />
+      <Serving data={props.data} />
       <ReadyList />
-      {data.bartenders && <Crew data={data}/>}
+      <Crew data={props.data}/>
       <Taps />
-      {data.queue && <Queue data={data} />}
+      <Queue data={data} />
      
     </div>
   );
