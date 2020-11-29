@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/.github.io/foobar-dashboard/static/css/main.6a0baa44.chunk.css",
-    "main.js": "/.github.io/foobar-dashboard/static/js/main.88ace93a.chunk.js",
-    "main.js.map": "/.github.io/foobar-dashboard/static/js/main.88ace93a.chunk.js.map",
-    "runtime-main.js": "/.github.io/foobar-dashboard/static/js/runtime-main.08db442f.js",
-    "runtime-main.js.map": "/.github.io/foobar-dashboard/static/js/runtime-main.08db442f.js.map",
-    "static/js/2.93a51230.chunk.js": "/.github.io/foobar-dashboard/static/js/2.93a51230.chunk.js",
-    "static/js/2.93a51230.chunk.js.map": "/.github.io/foobar-dashboard/static/js/2.93a51230.chunk.js.map",
-    "static/js/3.dcc3a098.chunk.js": "/.github.io/foobar-dashboard/static/js/3.dcc3a098.chunk.js",
-    "static/js/3.dcc3a098.chunk.js.map": "/.github.io/foobar-dashboard/static/js/3.dcc3a098.chunk.js.map",
-    "index.html": "/.github.io/foobar-dashboard/index.html",
-    "static/css/main.6a0baa44.chunk.css.map": "/.github.io/foobar-dashboard/static/css/main.6a0baa44.chunk.css.map",
-    "static/js/2.93a51230.chunk.js.LICENSE.txt": "/.github.io/foobar-dashboard/static/js/2.93a51230.chunk.js.LICENSE.txt",
-    "static/media/beer.6b6f4b38.png": "/.github.io/foobar-dashboard/static/media/beer.6b6f4b38.png"
+    "main.css": "/foobar-dashboard/static/css/main.6a0baa44.chunk.css",
+    "main.js": "/foobar-dashboard/static/js/main.88ace93a.chunk.js",
+    "main.js.map": "/foobar-dashboard/static/js/main.88ace93a.chunk.js.map",
+    "runtime-main.js": "/foobar-dashboard/static/js/runtime-main.797ef81a.js",
+    "runtime-main.js.map": "/foobar-dashboard/static/js/runtime-main.797ef81a.js.map",
+    "static/js/2.93a51230.chunk.js": "/foobar-dashboard/static/js/2.93a51230.chunk.js",
+    "static/js/2.93a51230.chunk.js.map": "/foobar-dashboard/static/js/2.93a51230.chunk.js.map",
+    "static/js/3.dcc3a098.chunk.js": "/foobar-dashboard/static/js/3.dcc3a098.chunk.js",
+    "static/js/3.dcc3a098.chunk.js.map": "/foobar-dashboard/static/js/3.dcc3a098.chunk.js.map",
+    "index.html": "/foobar-dashboard/index.html",
+    "static/css/main.6a0baa44.chunk.css.map": "/foobar-dashboard/static/css/main.6a0baa44.chunk.css.map",
+    "static/js/2.93a51230.chunk.js.LICENSE.txt": "/foobar-dashboard/static/js/2.93a51230.chunk.js.LICENSE.txt",
+    "static/media/beer.6b6f4b38.png": "/foobar-dashboard/static/media/beer.6b6f4b38.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.08db442f.js",
+    "static/js/runtime-main.797ef81a.js",
     "static/js/2.93a51230.chunk.js",
     "static/css/main.6a0baa44.chunk.css",
     "static/js/main.88ace93a.chunk.js"
