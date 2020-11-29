@@ -107,3 +107,8 @@ $body-secondary-color: white;
   color: black;
   flex-wrap: nowrap;
 }
+
+.taps-beer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

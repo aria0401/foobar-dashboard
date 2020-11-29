@@ -14,11 +14,11 @@ function Main(props) {
   return (
     <div className="Main">
      
-      <Clock data={props.data} />
-      <Serving data={props.data} />
+      <Clock data={data} />
+      <Serving data={data} />
       <ReadyList />
-      <Crew data={props.data}/>
-      <Taps />
+      <Crew data={data}/>
+      <Taps data={data}/>
       <Queue data={data} />
      
     </div>
