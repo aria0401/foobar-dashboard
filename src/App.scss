@@ -108,6 +108,7 @@ $body-secondary-color: white;
   flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
 #highlight-title {
   color: $highlight-color;
 }
@@ -136,4 +137,9 @@ $body-secondary-color: white;
       align-self: center;
     }
   }
+=======
+.taps-beer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+>>>>>>> 0af2e047e6aaa366a6bac80a8a8ba66688fcfd80
 }

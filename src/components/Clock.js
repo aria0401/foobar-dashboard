@@ -16,7 +16,7 @@ function Clock(props) {
 return(
   <div className="Clock panel">
      <h1>Clock</h1>
-     <p>Closing: {props.data.bar.closingTime}</p>
+     <p> Closing At: {props.data.bar.closingTime}</p>
         <p> Time : {date.toLocaleTimeString()}</p>
         <p> Date : {date.toLocaleDateString()}</p>
 
