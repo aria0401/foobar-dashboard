@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/foobar-dashboard/static/css/main.6a0baa44.chunk.css",
-    "main.js": "/foobar-dashboard/static/js/main.88ace93a.chunk.js",
-    "main.js.map": "/foobar-dashboard/static/js/main.88ace93a.chunk.js.map",
+    "main.css": "/foobar-dashboard/static/css/main.e4733dd5.chunk.css",
+    "main.js": "/foobar-dashboard/static/js/main.f1211183.chunk.js",
+    "main.js.map": "/foobar-dashboard/static/js/main.f1211183.chunk.js.map",
     "runtime-main.js": "/foobar-dashboard/static/js/runtime-main.797ef81a.js",
     "runtime-main.js.map": "/foobar-dashboard/static/js/runtime-main.797ef81a.js.map",
     "static/js/2.93a51230.chunk.js": "/foobar-dashboard/static/js/2.93a51230.chunk.js",
@@ -10,14 +10,15 @@
     "static/js/3.dcc3a098.chunk.js": "/foobar-dashboard/static/js/3.dcc3a098.chunk.js",
     "static/js/3.dcc3a098.chunk.js.map": "/foobar-dashboard/static/js/3.dcc3a098.chunk.js.map",
     "index.html": "/foobar-dashboard/index.html",
-    "static/css/main.6a0baa44.chunk.css.map": "/foobar-dashboard/static/css/main.6a0baa44.chunk.css.map",
+    "static/css/main.e4733dd5.chunk.css.map": "/foobar-dashboard/static/css/main.e4733dd5.chunk.css.map",
     "static/js/2.93a51230.chunk.js.LICENSE.txt": "/foobar-dashboard/static/js/2.93a51230.chunk.js.LICENSE.txt",
-    "static/media/beer.6b6f4b38.png": "/foobar-dashboard/static/media/beer.6b6f4b38.png"
+    "static/media/beer.6b6f4b38.png": "/foobar-dashboard/static/media/beer.6b6f4b38.png",
+    "static/media/toast.f9072d13.svg": "/foobar-dashboard/static/media/toast.f9072d13.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.797ef81a.js",
     "static/js/2.93a51230.chunk.js",
-    "static/css/main.6a0baa44.chunk.css",
-    "static/js/main.88ace93a.chunk.js"
+    "static/css/main.e4733dd5.chunk.css",
+    "static/js/main.f1211183.chunk.js"
   ]
 }
