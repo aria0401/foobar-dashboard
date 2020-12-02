@@ -56,6 +56,7 @@ $body-secondary-color: white;
 
 .ReadyList {
   @include gridItem(1, 1, 2, -1, $third-color);
+  overflow-y: scroll;
 }
 
 .Serving {
@@ -113,6 +114,7 @@ order {
   flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
 .Queue {
   background-color: $highlight-color;
 }
@@ -126,3 +128,39 @@ order {
     color: #f5f0ea;
   }
 }
+=======
+#highlight-title {
+  color: $highlight-color;
+}
+
+.beersimg {
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+.panel {
+  .readyNr {
+    color: $secondary-highlight-color;
+  }
+}
+.ReadyList {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.ReadyList {
+  div {
+    * {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}
+
+.taps-beer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+>>>>>>> 2c85bac316f4f1f586f25f1f8fff13f4747b317a
