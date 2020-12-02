@@ -83,12 +83,16 @@ $body-secondary-color: white;
 }
 
 .Order {
-  display: flex;
-  padding: 10px;
+  display: grid;
   color: white;
-  justify-content: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+}
+order {
+  * {
+    text-align: left;
+
+    justify-self: start;
+  }
 }
 .highlight {
   color: $highlight-color;
@@ -98,7 +102,8 @@ $body-secondary-color: white;
   height: 40px;
 }
 .order-details {
-  align-self: top;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .serving {
@@ -106,4 +111,18 @@ $body-secondary-color: white;
   display: flex;
   color: black;
   flex-wrap: nowrap;
+}
+
+.Queue {
+  background-color: $highlight-color;
+}
+.QueueList {
+  background-color: $third-color;
+  height: 100%;
+  padding-top: 20px;
+}
+.queue-header {
+  h1 {
+    color: #f5f0ea;
+  }
 }

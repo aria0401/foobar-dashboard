@@ -5,8 +5,9 @@ function Queue(props) {
   const queueArray = props.data.queue;
   return (
     <div className="Queue panel">
-      <h1>Queue</h1>
-      <div className="queue-header"></div>
+      <div className="queue-header">
+        <h1>Queue</h1>
+      </div>
 
       <QueueList orders={queueArray} />
     </div>
@@ -14,5 +15,3 @@ function Queue(props) {
 }
 
 export default Queue;
-
-
