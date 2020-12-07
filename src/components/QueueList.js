@@ -1,12 +1,11 @@
 import React from "react";
-import Order from "./QueueOrder";
-
+import QueueOrder from "./QueueOrder";
 
 function QueueList(props) {
   return (
     <div className="QueueList">
       {props.orders.map((item, i) => {
-        return <Order key={i} lineNumber={i} order={item} />;
+        return <QueueOrder key={i} lineNumber={i} order={item} />;
       })}
     </div>
   );

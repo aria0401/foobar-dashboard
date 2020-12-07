@@ -3,7 +3,7 @@ import  React, { useState , useEffect } from 'react'
 function Clock(props) {
   const [date,setDate] = useState(new Date());
 
-  console.log(props.data.closingTime)
+  
  
   useEffect(() => {
     var timer = setInterval(()=>setDate(new Date()), 1000 )
@@ -16,7 +16,7 @@ function Clock(props) {
 return(
   <div className="Clock panel">
      <h1>Clock</h1>
-     <p>Closing: {props.data.bar.closingTime}</p>
+     <p> Closing At: {props.data.bar.closingTime}</p>
         <p> Time : {date.toLocaleTimeString()}</p>
         <p> Date : {date.toLocaleDateString()}</p>
 
