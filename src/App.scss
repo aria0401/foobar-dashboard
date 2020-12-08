@@ -114,21 +114,6 @@ order {
   flex-wrap: nowrap;
 }
 
-<<<<<<< HEAD
-.Queue {
-  background-color: $highlight-color;
-}
-.QueueList {
-  background-color: $third-color;
-  height: 100%;
-  padding-top: 20px;
-}
-.queue-header {
-  h1 {
-    color: #f5f0ea;
-  }
-}
-=======
 #highlight-title {
   color: $highlight-color;
 }
@@ -163,4 +148,3 @@ order {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
->>>>>>> 2c85bac316f4f1f586f25f1f8fff13f4747b317a
