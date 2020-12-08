@@ -1,0 +1,28 @@
+@mixin gridItem($columnStart, $columnEnd, $rowStart, $rowEnd, $color) {
+  grid-column-start: $columnStart;
+  grid-column-end: $columnEnd;
+
+  grid-row-start: $rowStart;
+  grid-row-end: $rowEnd;
+
+  height: 100%;
+  width: 100%;
+  background-color: $color;
+  border-radius: 20px;
+}
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+$font-stack: "Satisfy", cursive;
+$body-font: "Roboto", sans-serif;
+// Colors
+
+$header-background-color: #f0a26d;
+$primary-color: #232121;
+$secondery-color: #f5f0ea;
+$third-color: #24262b;
+$highlight-color: #e39c96;
+$secondary-highlight-color: #f6c83f;
+$body-primary-color: #394b45;
+$body-secondary-color: white;

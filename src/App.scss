@@ -1,41 +1,24 @@
-@import "./base";
-@mixin gridItem($columnStart, $columnEnd, $rowStart, $rowEnd, $color) {
-  grid-column-start: $columnStart;
-  grid-column-end: $columnEnd;
-
-  grid-row-start: $rowStart;
-  grid-row-end: $rowEnd;
-
-  height: 100%;
-  width: 100%;
-  background-color: $color;
-  border-radius: 20px;
-}
-// Fonts
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-$font-stack: "Satisfy", cursive;
-// Colors
-
-$header-background-color: #f0a26d;
-$primary-color: #232121;
-$secondery-color: #f5f0ea;
-$third-color: #24262b;
-$highlight-color: #e39c96;
-$secondary-highlight-color: #f6c83f;
-$body-primary-color: #394b45;
-$body-secondary-color: white;
-
-// fonts
+@import ".//styles/base";
+@import "./styles/crew";
 
 .App {
   text-align: center;
   display: grid;
-  grid-template-rows: 70px 1fr;
+  grid-template-rows: 60px 1fr;
 }
 .Header {
   background-color: $header-background-color;
   width: 100%;
   color: $body-secondary-color;
+  display: flex;
+  justify-content: flex-start;
+  font: 100% $font-stack;
+  h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    align-self: center;
+  }
 }
 
 .Main {
@@ -88,7 +71,7 @@ $body-secondary-color: white;
   color: white;
   grid-template-columns: 1fr 1fr 1fr 3fr;
 }
-order {
+.order {
   * {
     text-align: left;
 
@@ -114,21 +97,6 @@ order {
   flex-wrap: nowrap;
 }
 
-<<<<<<< HEAD
-.Queue {
-  background-color: $highlight-color;
-}
-.QueueList {
-  background-color: $third-color;
-  height: 100%;
-  padding-top: 20px;
-}
-.queue-header {
-  h1 {
-    color: #f5f0ea;
-  }
-}
-=======
 #highlight-title {
   color: $highlight-color;
 }
@@ -163,4 +131,3 @@ order {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
->>>>>>> 2c85bac316f4f1f586f25f1f8fff13f4747b317a
