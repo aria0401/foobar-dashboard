@@ -114,6 +114,20 @@ order {
   flex-wrap: nowrap;
 }
 
+.Queue {
+  background-color: $highlight-color;
+}
+.QueueList {
+  background-color: $third-color;
+  height: 100%;
+  padding-top: 20px;
+}
+.queue-header {
+  h1 {
+    color: #f5f0ea;
+  }
+}
+
 #highlight-title {
   color: $highlight-color;
 }
