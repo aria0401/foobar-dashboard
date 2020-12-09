@@ -11,6 +11,7 @@ function App(props) {
   const [beers, setBeers] = useState({});
   console.log(data);
   console.log(beers);
+
   useEffect(() => {
     getData(setData);
     getBeers(setBeers);

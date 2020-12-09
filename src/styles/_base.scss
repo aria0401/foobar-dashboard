@@ -1,3 +1,18 @@
+@mixin btn($color, $background) {
+  color: $color;
+  background-color: $background;
+  border-radius: 57px;
+  padding: 0px 20px;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 @mixin gridItem($columnStart, $columnEnd, $rowStart, $rowEnd, $color) {
   grid-column-start: $columnStart;
   grid-column-end: $columnEnd;
