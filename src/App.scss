@@ -37,7 +37,7 @@
   @include gridItem(1, 1, 1, 2, $secondery-color);
 }
 
-.ReadyList {
+.MostSoldBeer {
   @include gridItem(1, 1, 2, -1, $third-color);
   overflow-y: scroll;
 }
@@ -128,20 +128,18 @@
 .panel {
   .readyNr {
     color: $secondary-highlight-color;
+
+    span {
+      color: $primary-color;
+    }
   }
 }
-.ReadyList {
+.MostSoldBeer {
   div {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-}
-.ReadyList {
-  div {
-    * {
-      justify-self: center;
-      align-self: center;
-    }
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-self: center;
   }
 }
 
