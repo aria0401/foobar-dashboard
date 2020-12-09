@@ -6,6 +6,9 @@ export const lightTheme = {
 
   panel1: "#FFFFFF",
   panel2: "#E39C96",
+  panel3: "white",
+
+  queueHeaderColor: "#E39C96",
   //   panel3:
 
   toggleBorder: "#FFF",
@@ -19,6 +22,8 @@ export const darkTheme = {
   orderColor: "white",
   panel1: "#F5F0EA",
   panel3: "#24262b",
+  queueHeaderColor: "#E39C96",
+
   toggleBorder: "#6B8096",
   gradient: "linear-gradient(#091236, #1E215D)",
 };

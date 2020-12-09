@@ -22,7 +22,7 @@ background-color: ${({ theme }) => theme.body};
       background-color: ${({ theme }) => theme.panel1};
 
   }
-  .Queue,.ReadyList{
+  .QueueList{
             background-color: ${({ theme }) => theme.panel3};
 
   }
@@ -31,6 +31,10 @@ background-color: ${({ theme }) => theme.body};
   }
   .Serving{
                   background-color: ${({ theme }) => theme.panel2};
+
+  }
+  .Queue{
+            background: ${({ theme }) => theme.queueHeaderColor};
 
   }
 
