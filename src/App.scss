@@ -69,6 +69,7 @@ $body-secondary-color: white;
 
 .Taps {
   @include gridItem(3, 4, 2, 2, $secondery-color);
+  display: grid;
 }
 
 .Queue {
@@ -79,8 +80,9 @@ $body-secondary-color: white;
 .panel {
   h1 {
     color: $body-primary-color;
+    margin-top: 1vw;
   }
-  font: 100% $font-stack;
+  font: 1vw $font-stack;
 }
 
 .Order {
@@ -163,31 +165,37 @@ order {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.svgTaps {
-  margin-left: 2vw;
-}
-
+//for the taps
 .tap-bars {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   align-items: end;
-  height: 200px;
-}
-.header-taps {
-  margin-bottom: 0;
+  position: relative;
+  bottom: 0.7vw;
+  padding: 0 1vw;
 }
 
-// @supports (writing-mode: vertical-rl) or (-webkit-writing-mode: vertical-rl) {
-//   .tap-bars p {
-//     -webkit-transform: rotate(180deg);
-//     transform: rotate(180deg);
-//   }
-// }
+.each-tap {
+  display: grid;
+  align-items: end;
 
-.tap-bars p {
-  -ms-writing-mode: tb-rl; /* old syntax, IE */
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  -ms-transform: rotate(180deg);
-  margin: auto;
+  * {
+    grid-area: 1/1;
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+
+  .capacity {
+    background-color: #f6c83f;
+  }
+  .level {
+    background-color: #e39c96;
+  }
+
+  p {
+    // transform: rotate(90deg);
+    // -ms-transform: rotate(90deg);
+    // -webkit-transform: rotate(90deg);
+    margin: auto;
+  }
 }
