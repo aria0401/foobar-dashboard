@@ -5,7 +5,6 @@ import { lightTheme, darkTheme } from "../modules/theme";
 import { GlobalStyles } from "../modules/global";
 
 import Toggle from "./Toggle";
-import moduleName from "module";
 
 function Header(props) {
   // Toggle theme functionality from css tricks https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
