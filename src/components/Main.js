@@ -20,11 +20,10 @@ function Main(props) {
      
       <Clock data={data} />
       <Serving data={data} />
-      <ReadyList data={data} />
       <Crew data={data}/>
       <Taps data={data}/>
       <Queue data={data} />
-      <ReadyList data={data} />
+      
      
 
     </div>

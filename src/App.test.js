@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+.forEach((item) => {
+  if(updatedData.filter(i=>i.name===item.beer).length===0){
+    updatedData.push({
+        name: item.beer,
+        amount: 0,
+        isStar: false,
+      })
+  }}
+  );
+
+  const y = props.ready.order;
+const z = props.ready.id;
+const x=[];
+

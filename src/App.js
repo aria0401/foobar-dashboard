@@ -9,7 +9,7 @@ import Loader from "../src/components/Loader"
 function App(props) {
   const [data, setData] = useState({});
   const [beers, setBeers] = useState({});
-  console.log(data);
+  
   console.log(beers);
   useEffect(() => {
     getData(setData);

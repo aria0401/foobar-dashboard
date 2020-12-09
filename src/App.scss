@@ -38,17 +38,17 @@ $body-secondary-color: white;
   color: $body-secondary-color;
 }
 
-.Main {
-  display: grid;
-  grid-template-columns: repeat(4, 22vw);
-  grid-template-rows: repeat(2, 18vw);
-  column-gap: 10px;
-  row-gap: 15px;
+// .Main {
+//   display: grid;
+//   grid-template-columns: repeat(4, 22vw);
+//   grid-template-rows: repeat(2, 18vw);
+//   column-gap: 10px;
+//   row-gap: 15px;
 
-  background-color: $primary-color;
-  height: 100%;
-  padding: 20px 50px;
-}
+//   background-color: $primary-color;
+//   height: 100%;
+//   padding: 20px 50px;
+// }
 
 .Clock {
   @include gridItem(1, 1, 1, 2, $secondery-color);
@@ -61,6 +61,7 @@ $body-secondary-color: white;
 
 .Serving {
   @include gridItem(2, 4, 1, 1, $secondery-color);
+  grid-template-columns: 1fr 1fr;
 }
 
 .Crew {
@@ -88,7 +89,7 @@ $body-secondary-color: white;
   color: white;
   grid-template-columns: 1fr 1fr 1fr 3fr;
 }
-order {
+.order {
   * {
     text-align: left;
 
@@ -109,9 +110,9 @@ order {
 
 .serving {
   margin-left: 10px;
-  display: flex;
+  display: inline-flex;
   color: black;
-  flex-wrap: nowrap;
+  // flex-wrap: nowrap;
 }
 
 .Queue {
@@ -141,6 +142,7 @@ order {
 .panel {
   .readyNr {
     color: $secondary-highlight-color;
+    display: inline;
   }
 }
 .ReadyList {
@@ -156,6 +158,10 @@ order {
       align-self: center;
     }
   }
+}
+
+.readyTest {
+  color: red;
 }
 
 .taps-beer {

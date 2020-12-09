@@ -1,21 +1,20 @@
-import React from "react";
-import beersimg from "../media/toast.svg";
+import React,{useState} from "react";
+import Ready from "./Ready";
+
+
 
 function ReadyList(props) {
-  console.log(props);
+  const [ready, setReady] = useState(new Set([]));
+
   return (
     <div className="ReadyList panel">
-      <h1 id="highlight-title">Ready To Go!</h1>
-      {props.data.serving.map((item, i) => {
-        return (
-          <div key={i}>
-            <img className="beersimg" src={beersimg} alt="beersImage" />
-            <h1 className="readyNr">{item.id}</h1>
-          </div>
-        );
-      })}
+        <h1 id="highlight-title">Ready To Go!</h1>
+      {/* {props.data.serving.map((item, i) => {
+        return <Ready key={i}  ready={item} />;
+      })} */}
     </div>
   );
+  
 }
 
 export default ReadyList;
