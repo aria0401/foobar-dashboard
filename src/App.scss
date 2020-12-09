@@ -162,3 +162,32 @@ order {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.svgTaps {
+  margin-left: 2vw;
+}
+
+.tap-bars {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  height: 200px;
+}
+.header-taps {
+  margin-bottom: 0;
+}
+
+// @supports (writing-mode: vertical-rl) or (-webkit-writing-mode: vertical-rl) {
+//   .tap-bars p {
+//     -webkit-transform: rotate(180deg);
+//     transform: rotate(180deg);
+//   }
+// }
+
+.tap-bars p {
+  -ms-writing-mode: tb-rl; /* old syntax, IE */
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -ms-transform: rotate(180deg);
+  margin: auto;
+}
