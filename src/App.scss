@@ -97,6 +97,23 @@
   flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
+=======
+.Queue {
+  background-color: $highlight-color;
+}
+.QueueList {
+  background-color: $third-color;
+  height: 100%;
+  padding-top: 20px;
+}
+.queue-header {
+  h1 {
+    color: #f5f0ea;
+  }
+}
+
+>>>>>>> 0ee30b66ce39d0aef1732b986dfbc7f796ba026b
 #highlight-title {
   color: $highlight-color;
 }
@@ -131,6 +148,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+<<<<<<< HEAD
 
 .togglebtn {
   @include btn($third-color, white);
@@ -139,3 +157,5 @@
   align-self: center;
   font-weight: 600;
 }
+=======
+>>>>>>> 0ee30b66ce39d0aef1732b986dfbc7f796ba026b
