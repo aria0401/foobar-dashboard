@@ -128,18 +128,26 @@
 .panel {
   .readyNr {
     color: $secondary-highlight-color;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     span {
       color: $primary-color;
     }
   }
 }
+
 .MostSoldBeer {
   div {
     display: grid;
     grid-template-columns: 1fr;
     justify-self: center;
     align-self: center;
+  }
+  img.beer-tap-img {
+    width: 100px;
+    justify-content: space-around;
   }
 }
 
