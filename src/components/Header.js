@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../modules/theme";
 import { GlobalStyles } from "../modules/global";
+import logoImg from "../media/logo.svg";
 
 import Toggle from "./Toggle";
-import moduleName from "module";
 
 function Header(props) {
   // Toggle theme functionality from css tricks https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
@@ -24,7 +24,10 @@ function Header(props) {
 
   return (
     <div className="Header">
-      <h1>{props.data.bar.name}</h1>
+      <div className="logo-wrapper">
+        <img className="logo" src={logoImg} />
+        <h1>{props.data.bar.name}</h1>
+      </div>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <>
           <GlobalStyles />

@@ -15,7 +15,7 @@ function Bartender(props) {
         <p>{props.bartender.name}, </p>
         <span
           style={{
-            color: props.bartender.status === "WORKING" ? "#e39c96" : "black",
+            color: props.bartender.status === "WORKING" ? "#eeb61c" : "white",
           }}
         >
           {props.bartender.status}

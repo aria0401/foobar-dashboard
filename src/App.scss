@@ -4,83 +4,106 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: auto 1fr;
 }
 .Header {
-  background-color: $header-background-color;
   width: 100%;
   color: $body-secondary-color;
   display: flex;
+  color: #eeb61c;
   justify-content: space-between;
   font: 100% $font-stack;
-  h1 {
-    margin: 0;
-    padding: 0;
+  .logo-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     margin-left: 50px;
-    align-self: center;
+    align-items: flex-start;
+    align-content: baseline;
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 4em;
+      margin-left: 5px;
+      align-self: flex-end;
+    }
+    .logo {
+      width: 70px;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
 .Main {
   display: grid;
-  grid-template-columns: repeat(4, 22vw);
-  grid-template-rows: repeat(2, 18vw);
-  column-gap: 10px;
-  row-gap: 15px;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1.8fr;
+  grid-template-rows: repeat(2, 40vh);
+  column-gap: 25px;
+  row-gap: 25px;
 
   background-color: $primary-color;
   height: 100%;
-  padding: 20px 50px;
+  padding: 0px 20px;
 }
 
 .Clock {
-  @include gridItem(1, 1, 1, 2, $secondery-color);
+  @include gridItem(1, 2, 1, 2);
 }
 
 .MostSoldBeer {
-  @include gridItem(1, 1, 2, -1, $third-color);
+  @include gridItem(1, 1, 2, -1);
   overflow-y: scroll;
 }
 
 .Serving {
-  @include gridItem(2, 4, 1, 1, $secondery-color);
+  @include gridItem(2, 5, 1, 1);
 }
 
 .Crew {
-  @include gridItem(2, 3, 2, 2, $secondery-color);
+  @include gridItem(3, 5, 2, 2);
 }
 
 .Taps {
-  @include gridItem(3, 4, 2, 2, $secondery-color);
+  @include gridItem(1, 3, 2, 2);
 }
 
 .Queue {
-  @include gridItem(4, -1, 1, -1, $third-color);
+  @include gridItem(5, -1, 1, -1);
   overflow-y: scroll;
 }
 
 .panel {
+  border-radius: 77px;
   h1 {
-    color: $body-primary-color;
+    font-weight: 300;
   }
-  font: 100% $font-stack;
+  font: 100% $body-font;
 }
 
 .Order {
   display: grid;
-  color: white;
-  grid-template-columns: 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 3fr;
+  font: 100% $font-stack;
+  font-size: 2em;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: baseline;
 }
 .line-number {
-  font: 100% $body-font;
   font-weight: bold;
   font-size: 2rem;
   margin: 0;
 }
 .order {
+  .order-id {
+    color: $highlight-color;
+  }
   * {
     text-align: left;
-    justify-self: start;
+    color: $highlight-color;
+    margin: 0;
+    align-self: center;
   }
 }
 .highlight {
@@ -108,11 +131,6 @@
 .QueueList {
   height: 100%;
   padding-top: 20px;
-}
-.queue-header {
-  h1 {
-    color: $body-primary-color;
-  }
 }
 
 #highlight-title {

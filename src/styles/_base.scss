@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-@mixin gridItem($columnStart, $columnEnd, $rowStart, $rowEnd, $color) {
+@mixin gridItem($columnStart, $columnEnd, $rowStart, $rowEnd) {
   grid-column-start: $columnStart;
   grid-column-end: $columnEnd;
 
@@ -22,22 +22,25 @@
 
   height: 100%;
   width: 100%;
-  background-color: $color;
   border-radius: 20px;
 }
 
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-$font-stack: "Satisfy", cursive;
 $body-font: "Roboto", sans-serif;
+$font-stack: "Amatic SC", cursive;
+
+// New fonts
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
 // Colors
 
 $header-background-color: #f0a26d;
 $primary-color: #232121;
 $secondery-color: #f5f0ea;
 $third-color: #24262b;
-$highlight-color: #e39c96;
+$highlight-color: #eeb61c;
 $secondary-highlight-color: #f6c83f;
 $body-primary-color: #394b45;
 $body-secondary-color: white;
