@@ -48,16 +48,12 @@
 }
 
 .Clock {
-<<<<<<< HEAD
   @include gridItem(1, 2, 1, 2);
-=======
-  @include gridItem(1, 1, 1, 2, $secondery-color);
 }
 
 .MostSoldBeer {
-  @include gridItem(1, 1, 2, -1, $third-color);
+  @include gridItem(1, 1, 2, -1);
   overflow-y: scroll;
->>>>>>> 195a0d184a507c689693cf58b86963bff0649398
 }
 
 .Serving {
