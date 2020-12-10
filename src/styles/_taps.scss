@@ -1,0 +1,38 @@
+//for the taps
+.tap-bars {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  position: relative;
+  bottom: 0.7vw;
+  grid-gap: 0.8vw;
+  padding-inline: 4vw;
+}
+
+.each-tap {
+  display: grid;
+  align-items: end;
+
+  * {
+    grid-area: 1/1;
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+
+  .capacity {
+    background-color: #262d3b;
+  }
+  .level {
+    background-color: #f7b71e;
+    margin-inline: 0.5vw;
+    margin-block: 0.2vw;
+    border-radius: 1px 1px 6px 6px;
+  }
+
+  p {
+    writing-mode: vertical-lr;
+    place-self: end center;
+    transform: rotate(180deg);
+    padding-inline: 0.5rem;
+  }
+}
