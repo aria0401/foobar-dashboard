@@ -16,11 +16,11 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  body: "#363537",
-  text1: "#394b45",
+  body: "#262D3B",
+  text1: "white",
   text2: "white",
   orderColor: "white",
-  panel1: "#F5F0EA",
+  panel1: "#343D50",
   panel3: "#24262b",
   queueHeaderColor: "#E39C96",
 
