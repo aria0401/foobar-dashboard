@@ -1,7 +1,8 @@
 import React from "react";
-import beersimg from "../media/toast.svg";
+import beerImages from "./BeerImages";
 
 function MostSoldBeer(props) {
+
 
   let levels = [];
   const taps = props.data.taps;
@@ -19,14 +20,36 @@ function MostSoldBeer(props) {
   const thirdOne = levels[2];
 console.log(levels);
 
+const tapsName = [];
+levels.forEach(e =>{
+  tapsName.push(e.name);
+})
+console.log(tapsName)
+
   return (
     <div className="MostSoldBeer panel">
       <h1 id="highlight-title">Most sold at the moment</h1>
    
        <div className="readyNr">
+       
+       
+        {beerImages.map((beerImage, index) => {
+          if (tapsName[0] === beerImage.name) {
+            return (
+             
+              <img
+                key={index}
+                className="beer-tap-img"
+                alt="beerImage"
+                src={process.env.PUBLIC_URL + beerImage.linkImg}
+              />
+             
+            );
+          }
+          return<div key={index}></div>
+})}
         <p> <span>Number One:</span> {firstOne.name}</p> 
-        <p> <span>Number Two:</span> {secondOne.name}</p> 
-        <p> <span>Number Three:</span> {thirdOne.name}</p> 
+       
         </div>
     </div>
   );
