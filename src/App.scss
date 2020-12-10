@@ -132,9 +132,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    span {
-      color: $primary-color;
-    }
+    margin-top: -18px;
+    // span {
+    //   color: $primary-color;
+    // }
   }
 }
 
