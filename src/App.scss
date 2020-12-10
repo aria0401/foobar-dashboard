@@ -48,7 +48,16 @@
 }
 
 .Clock {
+<<<<<<< HEAD
   @include gridItem(1, 2, 1, 2);
+=======
+  @include gridItem(1, 1, 1, 2, $secondery-color);
+}
+
+.MostSoldBeer {
+  @include gridItem(1, 1, 2, -1, $third-color);
+  overflow-y: scroll;
+>>>>>>> 195a0d184a507c689693cf58b86963bff0649398
 }
 
 .Serving {
@@ -141,20 +150,27 @@
 .panel {
   .readyNr {
     color: $secondary-highlight-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -18px;
+    // span {
+    //   color: $primary-color;
+    // }
   }
 }
-.ReadyList {
+
+.MostSoldBeer {
   div {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-self: center;
   }
-}
-.ReadyList {
-  div {
-    * {
-      justify-self: center;
-      align-self: center;
-    }
+  img.beer-tap-img {
+    width: 100px;
+    justify-content: space-around;
   }
 }
 
