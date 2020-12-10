@@ -16,8 +16,6 @@ function MostSoldBeer(props) {
   });
 
   const firstOne = levels[0];
-  const secondOne = levels[1];
-  const thirdOne = levels[2];
 console.log(levels);
 
 const tapsName = [];
