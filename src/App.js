@@ -4,13 +4,13 @@ import { getData, getBeers } from "./modules/rest";
 import "./App.scss";
 import Main from "./components/Main";
 import Header from "./components/Header";
-import Loader from "../src/components/Loader"
+import Loader from "../src/components/Loader";
 
 function App(props) {
   const [data, setData] = useState({});
   const [beers, setBeers] = useState({});
-  console.log(data);
-  console.log(beers);
+ 
+
   useEffect(() => {
     getData(setData);
     getBeers(setBeers);
@@ -20,13 +20,12 @@ function App(props) {
     }, 10000);
     getData(setData);
   }, []);
-  
+
   return (
     <div className="App">
-       {!data.bar && <Loader />}
-     { data.bar && <Header data={data} />}
-     {data.bar && <Main data={data}/>}
-     
+      {!data.bar && <Loader />}
+      {data.bar && <Header data={data} />}
+      {data.bar && <Main data={data} />}
     </div>
   );
 }
