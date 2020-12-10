@@ -173,6 +173,7 @@ order {
   position: relative;
   bottom: 0.7vw;
   padding: 0 1vw;
+  // transform: rotate(-90deg);
 }
 
 .each-tap {
@@ -183,6 +184,7 @@ order {
     grid-area: 1/1;
     margin: 0 3px;
     border-radius: 10px;
+    // height: 2vh;
   }
 
   .capacity {
@@ -193,9 +195,9 @@ order {
   }
 
   p {
-    // transform: rotate(90deg);
-    // -ms-transform: rotate(90deg);
-    // -webkit-transform: rotate(90deg);
-    margin: auto;
+    writing-mode: vertical-lr;
+    place-self: end center;
+    transform: rotate(180deg);
+    padding-inline: 0.5rem;
   }
 }
