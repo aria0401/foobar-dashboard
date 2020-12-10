@@ -48,14 +48,14 @@
   padding: 0px 20px;
 }
 
-.Clock {
+.MostSoldBeer {
   @include gridItem(1, 2, 1, 2);
 }
 
-.MostSoldBeer {
-  @include gridItem(1, 1, 2, -1);
-  overflow-y: scroll;
-}
+// .MostSoldBeer {
+//   @include gridItem(1, 1, 2, -1);
+//   overflow-y: scroll;
+// }
 
 .Serving {
   @include gridItem(2, 5, 1, 1);

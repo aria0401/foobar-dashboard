@@ -25,7 +25,7 @@ levels.forEach(e =>{
 console.log(tapsName)
 
   return (
-    <div className="MostSoldBeer">
+    <div className="MostSoldBeer panel">
       <div className="readyNr">
         <h1>{firstOne.name}</h1> 
        
