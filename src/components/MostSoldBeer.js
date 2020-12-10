@@ -25,9 +25,14 @@ levels.forEach(e =>{
 console.log(tapsName)
 
   return (
-    <div className="MostSoldBeer panel">
-      <h1 id="highlight-title">Most Wanted Tap</h1>
-   
+    <div className="MostSoldBeer">
+      <div className="readyNr">
+        <h1>{firstOne.name}</h1> 
+       
+        </div>
+      <div id="mostSoldP">
+      <p > Most Sold Draft </p>
+      </div>
       
        
         {beerImages.map((beerImage, index) => {
@@ -45,10 +50,7 @@ console.log(tapsName)
           }
           return<div key={index}></div>
 })}
- <div className="readyNr">
-        <p>{firstOne.name}</p> 
-       
-        </div>
+ 
     </div>
   );
 }

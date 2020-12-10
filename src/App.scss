@@ -1,5 +1,6 @@
 @import ".//styles/base";
 @import "./styles/crew";
+@import "./styles/_mostSold";
 
 .App {
   text-align: center;
@@ -133,47 +134,9 @@
   padding-top: 20px;
 }
 
-#highlight-title {
-  color: $highlight-color;
-}
-
-.beersimg {
-  width: auto;
-  height: 50px;
-  margin-left: 50px;
-  margin-bottom: 15px;
-}
-.panel {
-  .readyNr {
-    color: $secondary-highlight-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: -18px;
-    // span {
-    //   color: $primary-color;
-    // }
-  }
-}
-
-.MostSoldBeer {
-  div {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-self: center;
-    align-self: center;
-  }
-  img.beer-tap-img {
-    width: 100px;
-    justify-content: space-around;
-  }
-}
-
-.taps-beer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
+// #highlight-title {
+//   color: $highlight-color;
+// }
 
 .togglebtn {
   @include btn($third-color, white);
