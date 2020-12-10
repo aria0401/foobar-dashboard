@@ -29,7 +29,8 @@ console.log(tapsName)
       <h1 id="highlight-title">Most Wanted Tap</h1>
    
       
-       
+      
+
         {beerImages.map((beerImage, index) => {
           if (tapsName[0] === beerImage.name) {
             return (
@@ -45,6 +46,7 @@ console.log(tapsName)
           }
           return<div key={index}></div>
 })}
+      
  <div className="readyNr">
         <p>{firstOne.name}</p> 
        

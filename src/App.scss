@@ -147,8 +147,13 @@
     align-self: center;
   }
   img.beer-tap-img {
-    width: 100px;
+    width: 120px;
+    height: 150px;
     justify-content: space-around;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px #f7b71e;
+    box-sizing: border-box;
   }
 }
 
