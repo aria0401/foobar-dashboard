@@ -2,7 +2,7 @@
 import React from "react";
 
 export default function EachTap(props){
-  const capacity = props.item.capacity/150;
+  const capacity = props.item.capacity/145;
   const level = props.item.level/150;
 
 
