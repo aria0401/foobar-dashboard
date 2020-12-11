@@ -1,0 +1,14 @@
+@import "./base";
+
+.Clock {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
