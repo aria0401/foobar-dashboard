@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/foobar-dashboard/static/css/main.d89a01c2.chunk.css",
-    "main.js": "/foobar-dashboard/static/js/main.5d95b305.chunk.js",
-    "main.js.map": "/foobar-dashboard/static/js/main.5d95b305.chunk.js.map",
+    "main.js": "/foobar-dashboard/static/js/main.95bd7dd4.chunk.js",
+    "main.js.map": "/foobar-dashboard/static/js/main.95bd7dd4.chunk.js.map",
     "runtime-main.js": "/foobar-dashboard/static/js/runtime-main.087352c6.js",
     "runtime-main.js.map": "/foobar-dashboard/static/js/runtime-main.087352c6.js.map",
     "static/js/2.46cf10d9.chunk.js": "/foobar-dashboard/static/js/2.46cf10d9.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.087352c6.js",
     "static/js/2.46cf10d9.chunk.js",
     "static/css/main.d89a01c2.chunk.css",
-    "static/js/main.5d95b305.chunk.js"
+    "static/js/main.95bd7dd4.chunk.js"
   ]
 }
