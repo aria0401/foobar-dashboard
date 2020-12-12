@@ -10,16 +10,16 @@ import Toggle from "./Toggle";
 
 function Header(props) {
   // Toggle theme functionality from css tricks https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   // The function that toggles between themes
   const toggleTheme = () => {
     // if the theme is not light, then set it to dark
-    if (theme === "light") {
-      setTheme("dark");
+    if (theme === "dark") {
+      setTheme("light");
       // otherwise, it should be light
     } else {
-      setTheme("light");
+      setTheme("dark");
     }
   };
 
