@@ -11,7 +11,7 @@ function Main(props) {
 
   return (
     <div className="Main">
-      <Clock data={data} />
+      {/* <Clock data={data} /> */}
       <Serving data={data} />
       <Crew data={data} />
       <Taps data={data} />
