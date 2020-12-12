@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../modules/theme";
 import { GlobalStyles } from "../modules/global";
 import logoImg from "../media/logo.svg";
+import Clock from "./Clock"
 
 import Toggle from "./Toggle";
 
@@ -28,12 +29,15 @@ function Header(props) {
         <img className="logo" src={logoImg} />
         <h1>{props.data.bar.name}</h1>
       </div>
+    
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <>
           <GlobalStyles />
           <Toggle theme={theme} toggleTheme={toggleTheme} />
         </>
       </ThemeProvider>
+
+      <Clock  data={props.data}/>
     </div>
   );
 }
