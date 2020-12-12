@@ -5,8 +5,9 @@ function Clock(props) {
 
 const [time, setTime] = useState("");
 
+let date = new Date();
 let options = {
-  useCustomTime: true, 
+  
   width: "150px",
   border: true,
   borderColor: "#F7B71E",
@@ -18,10 +19,14 @@ let options = {
     minute: "#F7B71E",
     hour: "#F7B71E"
   },
-  "seconds": 0,   // set your
-  "minutes": 0,  // own
-  "hours": 21     // time here.
+  seconds: date.getSeconds(),
+  minutes: date.getMinutes(),
+  hours: date.getHours()
 };
+
+// this.interval = setInterval(this.updateClock, 1000);
+
+
 // inspired from https://ww.devcamp.com/trails/31/campsites/261/guides/calculating-time-react
 // remaining time to close the foobar
 function getTime() {
