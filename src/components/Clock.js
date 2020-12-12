@@ -16,7 +16,10 @@ let options = {
     second: "#transparent",
     minute: "#F7B71E",
     hour: "#F7B71E"
-  }
+  },
+  "seconds": 0,   // set your
+  "minutes": 6,  // own
+  "hours": 18     // time here.
 };
 // inspired from https://ww.devcamp.com/trails/31/campsites/261/guides/calculating-time-react
 // remaining time to close the foobar
