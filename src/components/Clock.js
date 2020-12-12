@@ -1,42 +1,9 @@
-import  React, { useState , useEffect } from 'react'
+import  React, { useState, useEffect} from 'react'
 import AnalogClock from 'analog-clock-react';
 
 function Clock(props) {
-//   const [date,setDate] = useState(new Date());
 
-  
- 
-//   useEffect(() => {
-//     var timer = setInterval(()=>setDate(new Date()), 1000 )
-//     return function cleanup() {
-//         clearInterval(timer)
-//     }
-
-// });
 const [time, setTime] = useState("");
-  let initialTime = true;
-
-  function getTime() {
-    const date = new Date();
-    const minutes = date.getMinutes();
-    const hours = date.getHours();
-    const seconds = date.getSeconds();
-
-    if (seconds === 0 || initialTime) {
-      setTime(
-        `${hours < 10 ? `0${hours}` : hours}${seconds % 2 === 0 ? ":" : " "}${
-          minutes < 10 ? `0${minutes}` : minutes
-        }`
-      );
-      initialTime = false;
-    }
-  }
- 
-  
-
-    setInterval(
-      getTime,
-     1000);
 
 let options = {
   width: "150px",
@@ -51,18 +18,53 @@ let options = {
     hour: "#F7B71E"
   }
 };
+// inspired from https://ww.devcamp.com/trails/31/campsites/261/guides/calculating-time-react
+// remaining time to close the foobar
+function getTime() {
+  const date = new Date();
+  const NewDate = date.getDate();
+  const Month = date.getMonth() + 1;
+  const Year = date.getFullYear();
 
+  const closingTime = new Date(`${Month} ${NewDate}, ${Year} ${props.data.bar.closingTime}`).getTime();
+
+     
+  const differnce = closingTime - date;
+
+      // let days = Math.floor(differnce / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((differnce % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((differnce % (1000 * 60 * 60)) / (1000 * 60));
+      // let seconds = Math.floor((differnce % (1000 * 60)) / 1000);
+
+      setTime(
+        `${hours < 10 ? `0${hours}` : hours}h & ${minutes < 10 ? `0${minutes}` : minutes }m`
+                );
+                if (differnce  < 0) {
+                 setTime("we are closed")
+              }
+}
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    getTime();
+  }, 1000);
+  return () => clearInterval(interval);
+}, []);
+    
+// setInterval(
+//   getTime,
+//  1000);
 
 
 return(
-  <div className="Clock panel">
-     <h1>Clock</h1>
-     <p> Closing At: {props.data.bar.closingTime}</p>
-        {/* <p> Time : {date.toLocaleTimeString()}</p>
-        <p> Date : {date.toLocaleDateString()}</p> */}
-        <div>{time}</div>
-        <div className="test">
-        <AnalogClock {...options} /></div>
+  <div className="Clock">
+
+      <div className="clock">   
+        <AnalogClock {...options} />
+      </div>
+     <h1 className="title" >Closing In: {time}</h1>
+     
+    
     </div>
 )
 }
