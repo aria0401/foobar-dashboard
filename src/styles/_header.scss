@@ -1,0 +1,44 @@
+@import "./base";
+
+.Header {
+  width: 100%;
+  color: $body-secondary-color;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #eeb61c;
+  justify-content: space-between;
+  margin-top: 10px;
+  font: 100% $font-stack;
+  .logo-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    align-items: flex-start;
+    align-content: baseline;
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 4em;
+      margin-left: 5px;
+      align-self: end;
+    }
+    .logo {
+      width: 70px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .Clock {
+    grid-column: 4/4;
+  }
+}
+.togglebtn {
+  @include btn($third-color, white);
+  margin-right: 40px;
+  height: 50px;
+  align-self: center;
+  font-weight: 600;
+  grid-column: 3/4;
+  margin-bottom: 70px;
+}
