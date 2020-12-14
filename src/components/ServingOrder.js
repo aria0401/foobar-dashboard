@@ -1,6 +1,14 @@
 import React from "react";
 
 function ServingOrder(props) {
+  const order = props.sevingOrder.order.length;
+  console.log(
+    "the order is for ",
+    order,
+    " beers and will take ",
+    order * 5,
+    " seconds"
+  );
   return (
     <div className="serving">
       {/* <p className="highlight line-number"> {props.lineNumber + 1} </p> */}
@@ -15,6 +23,7 @@ function ServingOrder(props) {
             <span
               id="span"
               style={{
+                animation: "beer " + order * 5 + " infinite",
                 animation: "beer 5s infinite",
               }}
             ></span>
