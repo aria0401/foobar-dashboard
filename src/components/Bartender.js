@@ -1,5 +1,11 @@
 import React from "react";
-import bartenderImg from "../media/bartender.svg";
+// import bartenderImg from "../media/bartender.svg";
+// import bartenderImg from "../media/jonas.svg";
+// import bartenderImg from "../media/peter.svg";
+// import bartenderImg from "../media/dannie.svg";
+// import bartenderImg from "../media/dannie-2.svg";
+// import bartenderImg from "../media/jonas-2.svg";
+import bartenderImg from "../media/peter-2.svg";
 
 function Bartender(props) {
   return (
