@@ -26,6 +26,14 @@ background-color: ${({ theme }) => theme.body};
   .Order {
       color: ${({ theme }) => theme.orderColor};
   }
+  .Serving{
+          background-color: ${({ theme }) => theme.panel2};
+
+  }
+  .each-tap .capacity{
+              background-color: ${({ theme }) => theme.panel3};
+
+  }
  
   
 
