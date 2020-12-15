@@ -1,0 +1,222 @@
+.ServingList {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#beer {
+  width: 53px;
+  height: 74px;
+  background: transparent;
+  position: absolute;
+  left: 2.5px;
+  top: 0px;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+
+#glass {
+  width: 65px;
+  height: 80px;
+  background: transparent;
+  border: solid 3.5px white;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  overflow: hidden;
+  // transform: rotate(-20deg);
+  border-top: none;
+}
+#beer span {
+  width: 250px;
+  height: 250px;
+  background: $highlight-color;
+  position: absolute;
+  top: 83px;
+  left: -190px;
+  transform: rotate(40deg);
+  // animation: beer 10s infinite;
+}
+
+#handle {
+  width: 25px;
+  height: 45px;
+  background: transparent;
+  border: solid 3.5px white;
+  position: relative;
+  top: 15px;
+  left: 65px;
+  border-radius: 0 16px 16px 0;
+  border-left: none;
+  // transform: rotate(-20deg);
+}
+
+#bubble_1 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -50px;
+  margin-left: -5px;
+  span {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite;
+  }
+}
+
+.order-number {
+  margin-top: 50px;
+  color: white;
+  font-size: 1.5em;
+  font-family: $body-font;
+  font-weight: 100;
+}
+@keyframes beer {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-82px);
+  }
+}
+
+// @keyframes glass {
+//   0% {
+//     transform: rotate(-20deg);
+//   }
+
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
+
+// @keyframes handle {
+//   0% {
+//     transform: rotate(-20deg);
+//   }
+
+//   90% {
+//     transform: rotate(0deg) translateX(5px) translateY(20px);
+//   }
+// }
+
+@keyframes bubbles {
+  0% {
+    transform: scale(0);
+  }
+  65% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#bubble_2 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -55px;
+  margin-left: 10px;
+  span {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite;
+  }
+}
+#bubble_3 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -45px;
+  margin-left: 10px;
+  span {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite 0.1s;
+  }
+}
+#bubble_4 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -50px;
+  margin-left: 20px;
+  span {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite 0.1s;
+  }
+}
+#bubble_5 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -46px;
+  margin-left: 30px;
+  span {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite 0.2s;
+  }
+}
+#bubble_6 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -55px;
+  margin-left: 40px;
+  span {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite 0.2s;
+  }
+}
+#bubble_7 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -46px;
+  margin-left: 45px;
+  span {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite 0.3s;
+  }
+}
+#bubble_8 {
+  position: absolute;
+  z-index: 4;
+  margin-top: -53px;
+  margin-left: 50px;
+  span {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubbles 5s infinite 0.3s;
+  }
+}

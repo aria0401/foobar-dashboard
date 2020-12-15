@@ -5,20 +5,7 @@ function Clock(props) {
 
 const [time, setTime] = useState("");
 
-let options = {
-  "useCustomTime": false,
-  width: "150px",
-  border: true,
-  borderColor: "#F7B71E",
-  baseColor: "black",
-  centerColor: "#F7B71E",
-  centerBorderColor: "transparent",
-  handColors: {
-    second: "#transparent",
-    minute: "#F7B71E",
-    hour: "#F7B71E"
-  },
-};
+
 
 
 
@@ -47,6 +34,22 @@ function closeTime() {
                  setTime("we are closed")
               }
 }
+
+let options = {
+  "useCustomTime": false,
+  width: "150px",
+  border: true,
+  borderColor: "#F7B71E",
+  baseColor: "#262e3b",
+  centerColor: "#F7B71E",
+  centerBorderColor: "transparent",
+  handColors: {
+    second: "#transparent",
+    minute: "#F7B71E",
+    hour: "#F7B71E"
+  },
+};
+
 
 // useEffect(() => {
 //   const interval = setInterval(() => {
