@@ -5,11 +5,10 @@ export const lightTheme = {
   orderColor: "black",
 
   panel1: "#FFFFFF",
-  panel2: "#E39C96",
-  panel3: "white",
+  panel2: "#ECC8BF",
+  panel3: "#ECC8BF",
 
   queueHeaderColor: "#E39C96",
-  //   panel3:
 
   toggleBorder: "#FFF",
   gradient: "linear-gradient(#39598A, #79D7ED)",
@@ -21,6 +20,7 @@ export const darkTheme = {
   text2: "white",
   orderColor: "white",
   panel1: "#343D50",
+  panel2: "#343D50",
   panel3: "#24262b",
   queueHeaderColor: "#E39C96",
 
