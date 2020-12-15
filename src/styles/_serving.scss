@@ -68,10 +68,10 @@
 
 .order-number {
   margin-top: 50px;
-  color: white;
+  color: $highlight-color;
   font-size: 1.5em;
   font-family: $body-font;
-  font-weight: 100;
+  font-weight: 700;
 }
 @keyframes beer {
   0% {
@@ -82,26 +82,6 @@
     transform: translateY(-82px);
   }
 }
-
-// @keyframes glass {
-//   0% {
-//     transform: rotate(-20deg);
-//   }
-
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
-
-// @keyframes handle {
-//   0% {
-//     transform: rotate(-20deg);
-//   }
-
-//   90% {
-//     transform: rotate(0deg) translateX(5px) translateY(20px);
-//   }
-// }
 
 @keyframes bubbles {
   0% {
