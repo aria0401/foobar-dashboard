@@ -1,16 +1,31 @@
 
 import React from "react";
+import beerImages from "./BeerImages";
 
 export default function EachTap(props){
-  const capacity = props.item.capacity/145;
-  const level = props.item.level/150;
+  const capacity = props.item.capacity/125;
+  const level = props.item.level/130;
 
 
     return(
       <div className="each-tap">
         <div className="capacity" style={{height: capacity+ "vw"}}></div>
         <div className="level" style={{height: level + "vw"}}></div>
-        <p>{props.item.beer}</p>
+        {/* <p>{props.item.beer}</p> */}
+        {beerImages.map((beerImage, index) => {
+        if (props.item.beer === beerImage.name) {
+          return (
+            <img
+              key={index}
+              className="tap-img"
+              alt="beerImage"
+              src={process.env.PUBLIC_URL + beerImage.linkImg}
+            />
+          );
+        }
+        return <div></div>;
+      })}
+
       </div>
     )
   }
