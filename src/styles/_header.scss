@@ -30,7 +30,7 @@
     }
   }
   .Clock {
-    grid-column: 4/4;
+    grid-column: 3/3;
   }
 }
 .togglebtn {
@@ -40,6 +40,12 @@
   align-self: center;
   font-weight: 600;
   font-size: 1.3em;
-  width: 200px;
+  // width: 200px;
   margin-bottom: 70px;
+}
+
+@media only screen and (min-width: 900px) {
+  .Header {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -1,17 +1,24 @@
 @import "./base";
 
+.Crew {
+  // display: flex;
+  // flex-direction: column;
+}
 .crew-wrapper {
   font: 100% $body-font;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  height: 70%;
+  margin-bottom: 50px;
+  margin-top: 50px;
   transition: all 0.3s ease-in;
-  transform: translateY(-10px);
-
+  // transform: translateY(-10px);
+  // margin-top: 2.5vw;
   .inactive {
     transition: all 0.3s ease-in;
 
-    transform: translateY(40px);
+    transform: translateY(-40px);
   }
 }
 
@@ -37,6 +44,14 @@
       align-self: center;
       margin-top: -10px;
       font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Bartender {
+    .bartender-info {
+      font-size: 3vw;
     }
   }
 }
