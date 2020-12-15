@@ -11,7 +11,7 @@ export default function EachTap(props){
       <div className="each-tap">
         <div className="capacity" style={{height: capacity+ "vw"}}></div>
         <div className="level" style={{height: level + "vw"}}></div>
-        {/* <p>{props.item.beer}</p> */}
+        <p>{props.item.beer}</p>
         {beerImages.map((beerImage, index) => {
         if (props.item.beer === beerImage.name) {
           return (
