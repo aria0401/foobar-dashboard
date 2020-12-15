@@ -28,7 +28,7 @@ function closeTime() {
       let seconds = Math.floor((differnce % (1000 * 60)) / 1000);
 
       setTime(
-        `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes }:${seconds < 10 ? `0${seconds}` : seconds }`);
+        `Closing In ${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes }:${seconds < 10 ? `0${seconds}` : seconds }`);
 
                 if (differnce  < 0) {
                  setTime("we are closed")
@@ -69,7 +69,7 @@ return(
       <div className="clock">   
         <AnalogClock {...options} />
       </div>
-     <h1 className="title" >Closing In {time}</h1>
+     <h1 className="title" >{time}</h1>
      
     
     </div>
