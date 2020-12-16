@@ -34,10 +34,17 @@ function Clock(props) {
       setTime("we are closed");
     }
   }
+<<<<<<< HEAD
 
   let options = {
     useCustomTime: false,
     width: "150px",
+=======
+//https://www.npmjs.com/package/analog-clock-react
+  let options = {
+    useCustomTime: false,
+    width: "100px",
+>>>>>>> 4f5ee700615635df7d8c773509849d0955dc7f2c
     border: true,
     borderColor: "#F7B71E",
     baseColor: "#262e3b",
@@ -50,6 +57,16 @@ function Clock(props) {
     },
   };
 
+<<<<<<< HEAD
+=======
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     getTime();
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // }, []);
+
+>>>>>>> 4f5ee700615635df7d8c773509849d0955dc7f2c
   setInterval(closeTime, 1000);
 
   return (

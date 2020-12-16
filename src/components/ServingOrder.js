@@ -13,12 +13,7 @@ function ServingOrder(props) {
     <div className="serving">
       {/* <p className="highlight line-number"> {props.lineNumber + 1} </p> */}
       <div>
-        <div
-          id="glass"
-          // style={{
-          //   animation: "glass 5s infinite",
-          // }}
-        >
+        <div id="glass">
           <div id="beer">
             <span
               id="span"
@@ -29,12 +24,7 @@ function ServingOrder(props) {
             ></span>
           </div>
         </div>
-        <div
-          id="handle"
-          // style={{
-          //   animation: "handle 5s infinite",
-          // }}
-        ></div>
+        <div id="handle"></div>
         <div id="bubble_1">
           <span id="bb"></span>
         </div>
