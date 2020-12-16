@@ -34,7 +34,7 @@ function Clock(props) {
       setTime("we are closed");
     }
   }
-
+//https://www.npmjs.com/package/analog-clock-react
   let options = {
     useCustomTime: false,
     width: "100px",
