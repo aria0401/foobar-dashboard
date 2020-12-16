@@ -1,6 +1,5 @@
 import React from "react";
 import Queue from "./Queue";
-import Clock from "./Clock";
 import Serving from "./Serving";
 import MostSoldBeer from "./MostSoldBeer";
 import Crew from "./Crew";
@@ -11,7 +10,6 @@ function Main(props) {
 
   return (
     <div className="Main">
-      {/* <Clock data={data} /> */}
       <Serving data={data} />
       <Crew data={data} />
       <Taps data={data} />

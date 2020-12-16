@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from "react";
-// import { getData, getBeers } from "../modules/rest";
-import { getData, getBeers } from "./modules/rest";
+import { getData } from "./modules/rest";
 import "./App.scss";
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Loader from "../src/components/Loader";
 
-function App(props) {
+function App() {
   const [data, setData] = useState({});
-  const [beers, setBeers] = useState({});
- 
 
   useEffect(() => {
     getData(setData);
-    getBeers(setBeers);
 
     setInterval(() => {
       getData(setData);
