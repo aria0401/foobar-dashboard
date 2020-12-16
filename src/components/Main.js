@@ -15,9 +15,6 @@ function Main(props) {
       <Taps data={data} />
       <Queue data={data} />
       <MostSoldBeer data={data} />
-      <Crew data={data} />
-      <Taps data={data} />
-      <Queue data={data} />
     </div>
   );
 }
