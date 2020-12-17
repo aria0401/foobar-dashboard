@@ -8,6 +8,6 @@ Clone the repository
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm Install`
 
 here you go, you have the codes running on your machine.
