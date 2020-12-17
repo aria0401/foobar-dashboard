@@ -6,7 +6,7 @@ Clone the repository
 
 ### `git clone https://github.com/nitzanmoise/foobar-dashboard.git`
 
-In the project directory, you can run:
+In the project directory run:
 
 ### `npm Install`
 
