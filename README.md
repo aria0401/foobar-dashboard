@@ -10,4 +10,8 @@ In the project directory, you can run:
 
 ### `npm Install`
 
-here you go, you have the codes running on your machine.
+To fire the live server run:
+
+### `npm start`
+
+Now you can see the content of the project in your browse.
