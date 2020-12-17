@@ -1,11 +1,6 @@
 import React from "react";
-// import bartenderImg from "../media/bartender.svg";
-// import bartenderImg from "../media/jonas.svg";
-// import bartenderImg from "../media/peter.svg";
-// import bartenderImg from "../media/dannie.svg";
-// import bartenderImg from "../media/dannie-2.svg";
-// import bartenderImg from "../media/jonas-2.svg";
-import bartenderImg from "../media/peter-2.svg";
+
+import bartenderImg from "../media/bartenders.svg";
 
 function Bartender(props) {
   return (
@@ -16,12 +11,12 @@ function Bartender(props) {
           : "inactive Bartender"
       }
     >
-      <img src={bartenderImg} />
+      <img src={bartenderImg} alt="bartenders" />
       <div className="bartender-info">
         <p>{props.bartender.name}, </p>
         <span
           style={{
-            color: props.bartender.status === "WORKING" ? "#eeb61c" : "white",
+            color: props.bartender.status === "WORKING" ? "#eeb61c" : "#ECC8BF",
           }}
         >
           {props.bartender.status}

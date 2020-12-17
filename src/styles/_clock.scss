@@ -5,14 +5,10 @@
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 
   h1 {
     margin: 0px;
-  }
-
-  p {
-    // margin-top: -20px;
   }
 
   .clock {
@@ -23,4 +19,9 @@
 }
 
 @media only screen and (min-width: 900px) {
+  .Clock {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
 }

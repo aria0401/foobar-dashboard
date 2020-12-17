@@ -26,7 +26,7 @@ function Header(props) {
   return (
     <div className="Header">
       <div className="logo-wrapper">
-        <img className="logo" src={logoImg} />
+        <img className="logo" src={logoImg} alt="LOGO"/>
         <h1>{props.data.bar.name}</h1>
       </div>
     

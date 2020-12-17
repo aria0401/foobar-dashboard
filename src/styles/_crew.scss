@@ -1,9 +1,5 @@
 @import "./base";
 
-.Crew {
-  // display: flex;
-  // flex-direction: column;
-}
 .crew-wrapper {
   font: 100% $body-font;
   display: grid;
@@ -13,8 +9,7 @@
   margin-bottom: 50px;
   margin-top: 50px;
   transition: all 0.3s ease-in;
-  // transform: translateY(-10px);
-  // margin-top: 2.5vw;
+
   .inactive {
     transition: all 0.3s ease-in;
 

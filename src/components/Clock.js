@@ -37,7 +37,7 @@ function Clock(props) {
 //https://www.npmjs.com/package/analog-clock-react
   let options = {
     useCustomTime: false,
-    width: "100px",
+    width: "120px",
     border: true,
     borderColor: "#F7B71E",
     baseColor: "#262e3b",
@@ -50,12 +50,6 @@ function Clock(props) {
     },
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     getTime();
-  //   }, 1000);
-  //   return () => clearInterval(interval);
-  // }, []);
 
   setInterval(closeTime, 1000);
 

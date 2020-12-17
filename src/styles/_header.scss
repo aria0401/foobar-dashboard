@@ -3,8 +3,6 @@
 .Header {
   width: 100%;
   color: $body-secondary-color;
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -18,7 +16,6 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-    // margin-left: 50px;
     align-items: flex-start;
     align-content: baseline;
     align-self: center;
@@ -46,8 +43,6 @@
   align-self: center;
   font-weight: 600;
   font-size: 1.3em;
-  // width: 200px;
-  // margin-bottom: 70px;
 }
 
 @media only screen and (min-width: 900px) {

@@ -26,14 +26,12 @@ console.log(tapsName)
 
   return (
     <div className="MostSoldBeer panel">
+       
+      <h1> Most Sold</h1>
+      
       <div className="readyNr">
         <h1>{firstOne.name}</h1> 
-       
-        </div>
-      <div id="mostSoldP">
-      <p > Most Sold Draft </p>
-      </div>
-      
+        </div>  
        
         {beerImages.map((beerImage, index) => {
           if (tapsName[0] === beerImage.name) {

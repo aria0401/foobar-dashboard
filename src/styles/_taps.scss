@@ -4,7 +4,7 @@
   grid-template-columns: repeat(7, 1fr);
   align-items: end;
   position: relative;
-  bottom: 0.7vw;
+  bottom: 4.2vw;
   grid-gap: 0.8vw;
   padding: {
     inline: 4vw;
@@ -41,7 +41,7 @@
 
   p {
     writing-mode: vertical-lr;
-    place-self: end center;
+    place-self: start center;
     transform: rotate(180deg);
     padding: {
       inline: 0.5rem;
@@ -52,6 +52,6 @@
 
 .tap-img {
   width: 90%;
-  // margin-bottom: 250%;
-  align-self: start;
+  align-items: flex-end;
+  margin-bottom: -30px;
 }
