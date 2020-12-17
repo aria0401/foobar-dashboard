@@ -14,4 +14,4 @@ To fire the live server run:
 
 ### `npm start`
 
-Now you can see the content of the project in your browse.
+Now you can see the content of the project in your browser.
