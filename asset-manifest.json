@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/foobar-dashboard/static/css/main.ae7d270d.chunk.css",
-    "main.js": "/foobar-dashboard/static/js/main.6a42f85f.chunk.js",
-    "main.js.map": "/foobar-dashboard/static/js/main.6a42f85f.chunk.js.map",
-    "runtime-main.js": "/foobar-dashboard/static/js/runtime-main.353ea0ab.js",
-    "runtime-main.js.map": "/foobar-dashboard/static/js/runtime-main.353ea0ab.js.map",
-    "static/js/2.8cb92ad2.chunk.js": "/foobar-dashboard/static/js/2.8cb92ad2.chunk.js",
-    "static/js/2.8cb92ad2.chunk.js.map": "/foobar-dashboard/static/js/2.8cb92ad2.chunk.js.map",
-    "index.html": "/foobar-dashboard/index.html",
-    "static/css/main.ae7d270d.chunk.css.map": "/foobar-dashboard/static/css/main.ae7d270d.chunk.css.map",
-    "static/js/2.8cb92ad2.chunk.js.LICENSE.txt": "/foobar-dashboard/static/js/2.8cb92ad2.chunk.js.LICENSE.txt",
-    "static/media/bartenders.f69bb32d.svg": "/foobar-dashboard/static/media/bartenders.f69bb32d.svg",
-    "static/media/logo.d3c5b883.svg": "/foobar-dashboard/static/media/logo.d3c5b883.svg"
+    "main.css": "/aria0401/foobar-dashboard/static/css/main.ae7d270d.chunk.css",
+    "main.js": "/aria0401/foobar-dashboard/static/js/main.4f123df8.chunk.js",
+    "main.js.map": "/aria0401/foobar-dashboard/static/js/main.4f123df8.chunk.js.map",
+    "runtime-main.js": "/aria0401/foobar-dashboard/static/js/runtime-main.3a27f6f9.js",
+    "runtime-main.js.map": "/aria0401/foobar-dashboard/static/js/runtime-main.3a27f6f9.js.map",
+    "static/js/2.a39b023c.chunk.js": "/aria0401/foobar-dashboard/static/js/2.a39b023c.chunk.js",
+    "static/js/2.a39b023c.chunk.js.map": "/aria0401/foobar-dashboard/static/js/2.a39b023c.chunk.js.map",
+    "index.html": "/aria0401/foobar-dashboard/index.html",
+    "static/css/main.ae7d270d.chunk.css.map": "/aria0401/foobar-dashboard/static/css/main.ae7d270d.chunk.css.map",
+    "static/js/2.a39b023c.chunk.js.LICENSE.txt": "/aria0401/foobar-dashboard/static/js/2.a39b023c.chunk.js.LICENSE.txt",
+    "static/media/bartenders.f69bb32d.svg": "/aria0401/foobar-dashboard/static/media/bartenders.f69bb32d.svg",
+    "static/media/logo.d3c5b883.svg": "/aria0401/foobar-dashboard/static/media/logo.d3c5b883.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.353ea0ab.js",
-    "static/js/2.8cb92ad2.chunk.js",
+    "static/js/runtime-main.3a27f6f9.js",
+    "static/js/2.a39b023c.chunk.js",
     "static/css/main.ae7d270d.chunk.css",
-    "static/js/main.6a42f85f.chunk.js"
+    "static/js/main.4f123df8.chunk.js"
   ]
 }
