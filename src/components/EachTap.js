@@ -2,8 +2,8 @@ import React from "react";
 import beerImages from "./BeerImages";
 
 export default function EachTap(props) {
-  const capacity = props.item.capacity / 90;
-  const level = props.item.level / 130;
+  const capacity = props.item.capacity / 105;
+  const level = props.item.level / 110;
 
   return (
     <div className="each-tap">

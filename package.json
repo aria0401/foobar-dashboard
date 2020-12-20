@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nitzanmoise.github.io/foobar-dashboard",
+  "homepage": "https://github.com/aria0401/foobar-dashboard",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
